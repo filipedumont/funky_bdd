@@ -23,30 +23,24 @@ sourceSets {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'org.jbehave', name: 'jbehave-core', version: '3.9.5'
-    testCompile group: 'org.jbehave.web', name: 'jbehave-web-selenium', version: '3.5.5'
+    testCompile group: 'org.jbehave', name: 'jbehave-core', version: '4.0-beta-11'
+    testCompile group: 'org.jbehave.web', name: 'jbehave-web-selenium', version: '3.6-beta-2'
     testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.44.0' //need to see
     testCompile group: 'org.seleniumhq.selenium.fluent', name: 'fluent-selenium', version: '1.14.5'
-    testCompile group: 'org.jbehave.site', name: 'jbehave-site-resources', version: '3.2'
+    //testCompile group: 'org.jbehave.site', name: 'jbehave-site-resources', version: '3.2'
 }
 
-//test {
-//    onlyIf { false }
-//}
-//
-//task acceptStories(type: Test){
-//    ignoreFailures = true
-//
-//    doFirst{
-//        file('target').mkdirs()
-//
-//        def filter = System.getProperty('bdd.stories')
-//        if(null == filter){
-//            filter = '*'
-//        }
-//        def stories = sourceSets.test.resources.matching{
-//            it.include filter
-//        }.asPath
-//        systemProperty('bdd.stories', stories)
-//    }
-//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

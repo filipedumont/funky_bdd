@@ -19,13 +19,12 @@ import java.util.List;
 public class TODOStories extends JUnitStories {
 
     private WebDriverProvider driverProvider = new PropertyWebDriverProvider();
-    private WebDriverSteps lifecycleSteps = new PerStoriesWebDriverSteps(driverProvider);
+    private WebDriverSteps lifecycleSteps = new PerScenarioWebDriverSteps(driverProvider);
     private Configuration configuration = configuration();
     private SeleniumContext context = new SeleniumContext();
     private ContextView contextView = new LocalFrameContextView().sized(500, 100);
 
     private Pages pages = new Pages(driverProvider);
-
 
 
     @Override

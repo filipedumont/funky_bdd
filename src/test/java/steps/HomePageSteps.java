@@ -18,6 +18,6 @@ public class HomePageSteps {
 
     @Given("user is on $page")
     public void givenUserIsOnPage(String page){
-        
+        pages.homePage().navigateToPage();
     }
 }
