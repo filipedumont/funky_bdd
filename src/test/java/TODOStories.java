@@ -13,6 +13,7 @@ import org.jbehave.core.steps.SilentStepMonitor;
 import org.jbehave.web.selenium.*;
 import pages.Pages;
 import steps.HomePageSteps;
+import steps.TaskSteps;
 
 import java.util.List;
 
@@ -58,6 +59,7 @@ public class TODOStories extends JUnitStories {
         return new InstanceStepsFactory(
                 configuration(),
                 new HomePageSteps(pages),
+                new TaskSteps(pages),
                 lifecycleSteps,
                 new WebDriverScreenshotOnFailure(driverProvider, configuration.storyReporterBuilder())
         );

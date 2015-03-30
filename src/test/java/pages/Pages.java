@@ -8,6 +8,7 @@ import org.jbehave.web.selenium.WebDriverProvider;
 public class Pages {
 
     private HomePage homePage;
+    private TaskPage taskPage;
     private final WebDriverProvider driverProvider;
 
     public Pages(WebDriverProvider driverProvider){
@@ -15,9 +16,17 @@ public class Pages {
     }
 
     public HomePage homePage(){
-        if(null == homePage){
-            homePage = new HomePage(driverProvider);
-        }
-        return homePage;
+//        if(null == homePage){
+//            homePage = new HomePage(driverProvider);
+//        }
+        return  new HomePage(driverProvider);
+    }
+
+    public TaskPage taskPage(){
+       // if(null == taskPage){
+         //   taskPage =
+                  return  new TaskPage(driverProvider);
+       // }
+       // return taskPage;
     }
 }
